@@ -1,50 +1,115 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing Page Tailwind</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NdawiWeb.site</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 
   <!-- Header -->
   <header class="bg-indigo-600 text-white text-center py-16 px-4">
-    <h1 class="text-4xl font-bold mb-2">Selamat Datang di Website Kami</h1>
-    <p class="text-lg mb-6">Solusi digital terbaik untuk kebutuhan Anda</p>
-    <a href="#kontak" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
-      Hubungi Kami
+    <h1 class="text-4xl font-bold mb-2">Selamat datang di NdawiWeb.site</h1>
+    <p class="text-lg max-w-xl mx-auto">Kami adalah penyedia jasa pembuatan website profesional—mulai dari landing page, portofolio, blog, hingga portal berita—dengan desain responsif, harga terjangkau, dan layanan yang bisa disesuaikan kebutuhan Anda.</p>
+    <a href="#paket" class="mt-6 inline-block bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+      Lihat Paket
     </a>
   </header>
 
-  <!-- Fitur -->
-  <section class="py-16 px-4">
-    <h2 class="text-2xl font-bold text-center mb-10">Fitur Unggulan</h2>
-    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">Responsive</h3>
-        <p>Tampil cantik di semua ukuran layar.</p>
+  <!-- Paket Section -->
+  <section id="paket" class="py-16 px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Paket Jasa Pembuatan Website</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Lite -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-2">Lite Package</h3>
+        <p class="text-sm text-gray-500 mb-2">Rp 800.000</p>
+        <ul class="text-sm list-disc pl-5">
+          <li>1 halaman scroll (Home, Layanan, Kontak)</li>
+          <li>Responsif, desain sederhana</li>
+          <li>Form kontak, tombol WhatsApp</li>
+        </ul>
       </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">Cepat dan Ringan</h3>
-        <p>Tailwind via CDN tanpa ribet build tools.</p>
+
+      <!-- Starter -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-2">Starter Web</h3>
+        <p class="text-sm text-gray-500 mb-2">Rp 1.500.000</p>
+        <ul class="text-sm list-disc pl-5">
+          <li>Hingga 3 halaman, navigasi lengkap</li>
+          <li>Desain menarik, galeri, SEO dasar</li>
+          <li>1x revisi</li>
+        </ul>
       </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">Mudah Disesuaikan</h3>
-        <p>Kustomisasi cepat langsung dari HTML.</p>
+
+      <!-- Business -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-2">Business Site</h3>
+        <p class="text-sm text-gray-500 mb-2">Rp 2.000.000</p>
+        <ul class="text-sm list-disc pl-5">
+          <li>4–5 halaman lengkap</li>
+          <li>Form, maps, blog, responsif</li>
+        </ul>
       </div>
+
+      <!-- News Basic -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-2">News Basic</h3>
+        <p class="text-sm text-gray-500 mb-2">Rp 2.000.000</p>
+        <ul class="text-sm list-disc pl-5">
+          <li>Blog/portal berita sederhana</li>
+          <li>4 kategori, 2 penulis, mobile-friendly</li>
+        </ul>
+      </div>
+
+      <!-- Pro Page -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-2">Pro Page</h3>
+        <p class="text-sm text-gray-500 mb-2">Rp 2.500.000</p>
+        <ul class="text-sm list-disc pl-5">
+          <li>Tema premium, layout custom</li>
+          <li>CTA kuat, hingga 2x revisi</li>
+        </ul>
+      </div>
+
+      <!-- News Pro -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-2">News Pro</h3>
+        <p class="text-sm text-gray-500 mb-2">Rp 3.500.000</p>
+        <ul class="text-sm list-disc pl-5">
+          <li>Portal berita profesional</li>
+          <li>Slider headline, komentar, kategori dinamis</li>
+        </ul>
+      </div>
+
+      <!-- News Ultimate -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-2">News Ultimate</h3>
+        <p class="text-sm text-gray-500 mb-2">Rp 5.000.000</p>
+        <ul class="text-sm list-disc pl-5">
+          <li>Siap AdSense, SEO advance</li>
+          <li>Sistem penulis lengkap, newsletter</li>
+        </ul>
+      </div>
+
     </div>
+    <p class="text-sm text-center text-gray-500 mt-10 max-w-2xl mx-auto">
+      Semua paket sudah termasuk domain .com dan hosting aktif selama 1 tahun. Kami siap menyesuaikan fitur sesuai kebutuhan Anda.
+    </p>
   </section>
 
   <!-- Kontak -->
   <section id="kontak" class="bg-gray-200 py-16 px-4 text-center">
     <h2 class="text-2xl font-bold mb-4">Hubungi Kami</h2>
-    <p class="text-lg mb-2">Email: <a href="mailto:kamu@email.com" class="text-indigo-600 font-medium">kamu@email.com</a></p>
+    <p class="text-lg mb-2">WA: <a href="https://wa.me/6282143813013" class="text-indigo-600 font-medium">0821-4381-3013</a></p>
+    <p class="text-lg">Email: <a href="mailto:arumikadigitalkreatif@gmail.com" class="text-indigo-600 font-medium">arumikadigitalkreatif@gmail.com</a></p>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white text-center py-6">
-    <p>&copy; 2025 Website Kamu. Dibuat dengan ❤️</p>
+    <p>&copy; 2025 NdawiWeb.site | PT. Arumika Digital Kreatif</p>
   </footer>
 
 </body>
