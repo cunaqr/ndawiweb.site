@@ -30,7 +30,7 @@
     <!-- Kanan: Gambar -->
     <div class="md:w-1/2">
       <!-- <img src="https://via.placeholder.com/400x300?text=NdawiWeb+Image" alt="Ilustrasi Jasa Website" class="w-full h-auto rounded-lg shadow-md"> -->
-      <img src="assets/img/wBuild.png" alt="Ilustrasi Jasa Website" class="w-full h-auto rounded-lg">
+      <img src="/Users/dynabook/Desktop/assets/img/wBuild.png" alt="Ilustrasi Jasa Website" class="w-full h-auto rounded-lg">
     </div>
 
   </div>
@@ -42,7 +42,7 @@
 
     <!-- Lite Package -->
     <div class="bg-white rounded-xl shadow-md p-6" data-paket="Lite Package">
-      <img src="assets/img/400w240h.png" alt="Lite Package" class="w-full h-40 object-cover rounded-lg mb-4">
+      <img src="/Users/dynabook/Desktop/assets/img/400w240h.png" alt="Lite Package" class="w-full h-40 object-cover rounded-lg mb-4">
       <h3 class="text-xl font-bold mb-1">Lite Package</h3>
       <p class="text-sm text-gray-400 mb-1">Jenis: Landing Page / Portofolio Sederhana</p>
       <p class="text-sm text-gray-500 mb-2">Rp 800.000</p>
@@ -56,7 +56,7 @@
 
     <!-- Starter Web -->
     <div class="bg-white rounded-xl shadow-md p-6" data-paket="Starter Web">
-      <img src="assets/img/400w240h.png" alt="Starter Web" class="w-full h-40 object-cover rounded-lg mb-4">
+      <img src="/Users/dynabook/Desktop/assets/img/400w240h.png" alt="Starter Web" class="w-full h-40 object-cover rounded-lg mb-4">
       <h3 class="text-xl font-bold mb-1">Starter Web</h3>
       <p class="text-sm text-gray-400 mb-1">Jenis: Landing Page / Organisasi / Portofolio</p>
       <p class="text-sm text-gray-500 mb-2">Rp 1.500.000</p>
@@ -70,7 +70,7 @@
 
     <!-- Business Site -->
     <div class="bg-white rounded-xl shadow-md p-6" data-paket="Business Site">
-      <img src="assets/img/400w240h.png" alt="Business Site" class="w-full h-40 object-cover rounded-lg mb-4">
+      <img src="/Users/dynabook/Desktop/assets/img/400w240h.png" alt="Business Site" class="w-full h-40 object-cover rounded-lg mb-4">
       <h3 class="text-xl font-bold mb-1">Business Site</h3>
       <p class="text-sm text-gray-400 mb-1">Jenis: Company Profile / Organisasi / Portofolio Pro</p>
       <p class="text-sm text-gray-500 mb-2">Rp 2.000.000</p>
@@ -83,7 +83,7 @@
 
     <!-- News Basic -->
     <div class="bg-white rounded-xl shadow-md p-6" data-paket="News Basic">
-      <img src="assets/img/400w240h.png" alt="News Basic" class="w-full h-40 object-cover rounded-lg mb-4">
+      <img src="/Users/dynabook/Desktop/assets/img/400w240h.png" alt="News Basic" class="w-full h-40 object-cover rounded-lg mb-4">
       <h3 class="text-xl font-bold mb-1">News Basic</h3>
       <p class="text-sm text-gray-400 mb-1">Jenis: Portal Berita / Blog Sederhana</p>
       <p class="text-sm text-gray-500 mb-2">Rp 2.000.000</p>
@@ -97,7 +97,7 @@
 
     <!-- Pro Page -->
     <div class="bg-white rounded-xl shadow-md p-6" data-paket="Pro Page">
-      <img src="assets/img/400w240h.png" alt="Pro Page" class="w-full h-40 object-cover rounded-lg mb-4">
+      <img src="/Users/dynabook/Desktop/assets/img/400w240h.png" alt="Pro Page" class="w-full h-40 object-cover rounded-lg mb-4">
       <h3 class="text-xl font-bold mb-1">Pro Page</h3>
       <p class="text-sm text-gray-400 mb-1">Jenis: Landing Page Premium / Company Profile Plus</p>
       <p class="text-sm text-gray-500 mb-2">Rp 2.500.000</p>
@@ -111,7 +111,7 @@
 
     <!-- News Pro -->
     <div class="bg-white rounded-xl shadow-md p-6" data-paket="News Pro">
-      <img src="assets/img/400w240h.png" alt="News Pro" class="w-full h-40 object-cover rounded-lg mb-4">
+      <img src="/Users/dynabook/Desktop/assets/img/400w240h.png" alt="News Pro" class="w-full h-40 object-cover rounded-lg mb-4">
       <h3 class="text-xl font-bold mb-1">News Pro</h3>
       <p class="text-sm text-gray-400 mb-1">Jenis: Portal Berita Profesional</p>
       <p class="text-sm text-gray-500 mb-2">Rp 3.500.000</p>
@@ -125,7 +125,7 @@
 
     <!-- News Ultimate -->
     <div class="bg-white rounded-xl shadow-md p-6" data-paket="News Ultimate">
-      <img src="assets/img/400w240h.png" alt="News Ultimate" class="w-full h-40 object-cover rounded-lg mb-4">
+      <img src="/Users/dynabook/Desktop/assets/img/400w240h.png" alt="News Ultimate" class="w-full h-40 object-cover rounded-lg mb-4">
       <h3 class="text-xl font-bold mb-1">News Ultimate</h3>
       <p class="text-sm text-gray-400 mb-1">Jenis: Portal Berita Lengkap + Sistem Iklan</p>
       <p class="text-sm text-gray-500 mb-2">Rp 5.000.000</p>
@@ -172,7 +172,7 @@
   </footer>
 
   <!--Script -->
-  <script>
+  <!-- <script>
     let paketDipilih = "";
 
     function bukaForm(namaPaket) {
@@ -197,13 +197,80 @@
       window.open(url, '_blank');
       tutupForm();
     }
+  </script> -->
+  <script>
+    let paketDipilih = "";
+
+    function bukaForm(namaPaket) {
+      paketDipilih = namaPaket;
+      document.getElementById('formModal').classList.remove('hidden');
+    }
+
+    function tutupForm() {
+      document.getElementById('formModal').classList.add('hidden');
+      document.getElementById('namaInput').value = '';
+      document.getElementById('waInput').value = '';
+      document.getElementById('emailInput').value = '';
+      document.getElementById('keperluanInput').value = '';
+    }
+
+    function kirimKeWA() {
+      const nama = document.getElementById('namaInput').value.trim();
+      const wa = document.getElementById('waInput').value.trim();
+      const email = document.getElementById('emailInput').value.trim();
+      const keperluan = document.getElementById('keperluanInput').value.trim();
+
+      // Validasi Nama
+      if (!nama) {
+        alert("Nama tidak boleh kosong.");
+        return;
+      }
+
+      // Validasi Nomor WA (mulai dengan 08 atau +62 dan angka saja setelah itu)
+      const waValid = /^(08|\+62)[0-9]{8,14}$/.test(wa);
+      if (!waValid) {
+        alert("Masukkan nomor WhatsApp yang valid (misalnya 081234567890 atau +6281234567890).");
+        return;
+      }
+
+      // Validasi Email
+      const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!emailValid) {
+        alert("Masukkan email yang valid.");
+        return;
+      }
+
+      // Validasi Keperluan
+      if (!keperluan) {
+        alert("Silakan isi keperluan kamu.");
+        return;
+      }
+
+      // Kirim ke WhatsApp
+      const nomorTujuan = "6282143813013";
+      const pesan = `Paket yang dipilih:
+- Paket: ${paketDipilih}
+- Nama: ${nama}
+- Nomor WA: ${wa}
+- Email: ${email}
+- Keperluan: ${keperluan}`;
+
+      const url = `https://wa.me/${nomorTujuan}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, '_blank');
+      tutupForm();
+    }
   </script>
 
   <!-- Modal Form -->
   <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
     <div class="bg-white rounded-lg p-6 w-full max-w-md text-left">
-      <h3 class="text-xl font-bold mb-4">Jelaskan keperluan kamu:</h3>
-      <textarea id="keperluanInput" class="w-full border border-gray-300 rounded p-3 mb-4" rows="4" placeholder="Contoh: Saya butuh website untuk portofolio pribadi..."></textarea>
+      <h3 class="text-xl font-bold mb-4">Isi data dan keperluan kamu:</h3>
+
+      <input id="namaInput" type="text" placeholder="Nama lengkap" class="w-full border border-gray-300 rounded p-3 mb-3" />
+      <input id="waInput" type="text" placeholder="Nomor WhatsApp aktif" class="w-full border border-gray-300 rounded p-3 mb-3" />
+      <input id="emailInput" type="email" placeholder="Email aktif" class="w-full border border-gray-300 rounded p-3 mb-3" />
+      <textarea id="keperluanInput" rows="4" placeholder="Jelaskan keperluan kamu..." class="w-full border border-gray-300 rounded p-3 mb-4"></textarea>
+
       <div class="flex justify-end gap-2">
         <button onclick="tutupForm()" class="text-sm text-gray-500 hover:underline">Batal</button>
         <button onclick="kirimKeWA()" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Kirim</button>
