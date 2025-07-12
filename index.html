@@ -152,7 +152,7 @@
     <!-- QnA Item 1 -->
     <div class="border border-gray-200 rounded-lg overflow-hidden">
       <button class="w-full flex justify-between items-center px-4 py-3 text-left text-indigo-700 font-semibold focus:outline-none" onclick="toggleQna(this)">
-        <span>Apakah harga sudah termasuk domain dan hosting?</span>
+        <span class="justify-left">Apakah harga sudah termasuk domain dan hosting?</span>
         <i class="fas fa-chevron-down transition-transform duration-200"></i>
       </button>
       <div class="qna-content px-4 pb-4 hidden text-gray-700">
@@ -207,8 +207,6 @@
   </div>
 </section>
 
-
-  <!-- Kontak -->
 <section id="kontak" class="bg-gray-200 py-16 px-4">
   <h2 class="text-2xl font-bold text-center mb-10">Hubungi Kami</h2>
 
@@ -369,40 +367,38 @@ function bukaForm(namaPaket) {
   </script>
 
 <!-- Modal Form -->
-<div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-  <div class="bg-white rounded-lg p-6 w-full max-w-4xl text-left">
+<div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 px-4">
+  <div class="bg-white rounded-lg p-6 w-full max-w-4xl text-left overflow-y-auto max-h-[90vh]">
 
-    <div class="grid md:grid-cols-2 gap-6">
-      
-      <!-- KIRI: Info Pembayaran -->
-      <div class="bg-gray-100 p-4 rounded-md">
-        <h3 class="text-lg font-semibold text-indigo-700 mb-3">Sistem Pembayaran</h3>
-        <div id="infoPembayaran" class="text-gray-700 text-sm leading-relaxed">
-          <!-- Konten akan diisi oleh JS sesuai paket -->
+      <div class="grid md:grid-cols-2 gap-6">
+        
+        <!-- KIRI: Info Pembayaran -->
+        <div class="bg-gray-100 p-4 rounded-md">
+          <h3 class="text-lg font-semibold text-indigo-700 mb-3">Sistem Pembayaran</h3>
+          <div id="infoPembayaran" class="text-gray-700 text-sm leading-relaxed">
+            <!-- Konten akan diisi oleh JS sesuai paket -->
+          </div>
         </div>
-      </div>
 
-      <!-- KANAN: Form Input -->
-      <div>
-        <h3 class="text-lg font-semibold mb-4">Isi data dan keperluan kamu:</h3>
+        <!-- KANAN: Form Input -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Isi data dan keperluan kamu:</h3>
 
-        <input id="namaInput" type="text" placeholder="Nama lengkap" class="w-full border border-gray-300 rounded p-3 mb-3" />
-        <input id="waInput" type="text" placeholder="Nomor WhatsApp aktif" class="w-full border border-gray-300 rounded p-3 mb-3" />
-        <input id="emailInput" type="email" placeholder="Email aktif" class="w-full border border-gray-300 rounded p-3 mb-3" />
-        <textarea id="keperluanInput" rows="4" placeholder="Jelaskan keperluan kamu..." class="w-full border border-gray-300 rounded p-3 mb-4"></textarea>
-        <div class="bg-yellow-100 w-full rounded p-4 mb-4 text-sm">Semua pembayaran dilakukan melalui rekening atau metode yang akan diinformasikan dalam invoice.</div>
+          <input id="namaInput" type="text" placeholder="Nama lengkap" class="text-sm w-full border border-gray-300 rounded p-2 mb-3" />
+          <input id="waInput" type="text" placeholder="Nomor WhatsApp aktif" class="text-sm w-full border border-gray-300 rounded p-2 mb-3" />
+          <input id="emailInput" type="email" placeholder="Email aktif" class="text-sm w-full border border-gray-300 rounded p-2 mb-3" />
+          <textarea id="keperluanInput" rows="4" placeholder="Jelaskan keperluan kamu..." class="text-sm w-full border border-gray-300 rounded p-2 mb-4"></textarea>
+          <div class="bg-yellow-100 w-full rounded p-4 mb-4 text-sm">Semua pembayaran dilakukan melalui rekening atau metode yang akan diinformasikan dalam invoice.</div>
 
-        <div class="flex justify-end gap-2">
-          <button onclick="tutupForm()" class="text-sm text-gray-500 hover:underline">Batal</button>
-          <button onclick="kirimKeWA()" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Kirim</button>
+          <div class="flex justify-end gap-2">
+            <button onclick="tutupForm()" class="text-sm text-gray-500 hover:underline">Batal</button>
+            <button onclick="kirimKeWA()" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Kirim</button>
+          </div>
         </div>
-      </div>
+
 
     </div>
-
   </div>
-</div>
-
-
+  </div>
 </body>
 </html>
